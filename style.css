@@ -1,7 +1,6 @@
 footer {
     width: 100%;
     height: 50px;
-    position: fixed;
     background-color: rgb(3, 3, 138);
     font-size: 20px;
     color: white;
@@ -9,9 +8,39 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    img{
+
+    img {
         width: 45px;
     }
+}
+
+header {
+    display: flex;
+    align-items: center;
+    box-shadow: 10px 7px 20px rgb(204, 200, 200);
+
+}
+
+.menu1 {
+    text-align: center;
+    font-size: 125%;
+    color: blue;
+    text-decoration: none;
+    border: px solid #0b03fc;
+    border-radius: 20px;
+    padding: 15px 0;
+}
+
+.menu1:hover {
+    background-color: rgb(3, 3, 185);
+    color: white;
+}
+
+.menu2 {
+    text-align: center;
+    font-size: 125%;
+    text-decoration: none;
+    padding: 15px 0;
 }
 
 .fordcopyright {
@@ -26,21 +55,22 @@ footer {
     width: 80%;
     max-width: 960px;
     height: auto;
+
 }
 
-.menu1 {
-    text-align: center;
-    font-size: 130%;
-}
+
 
 .textoranger {
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    margin: 0 auto;
 }
 
 .logoford {
     width: 12%;
     height: auto;
+    margin-right: 26%;
+
 }
 
 /*tela menor*/
@@ -51,7 +81,7 @@ footer {
         padding: 10px;
         box-sizing: border-box;
         position: fixed;
-        
+
     }
 
     .fordcopyright {
@@ -104,6 +134,7 @@ footer {
         width: 8%;
     }
 }
+
 /*css do site lançamento*/
 #video-ford-carro {
     background: url(video/Ford\ Ranger\ 3.2\ Limited\ 2022\ 4x4\ AT.mp4) no-repeat;
@@ -112,33 +143,57 @@ footer {
     background-color: black;
     padding-inline: 20em;
 }
-.checkbox{
+
+.checkbox {
     width: 100px;
     height: 40px;
+    display: flex;
+
 }
-
-
 
 
 
 /* css do site de contato*/
-
-.submit{
-background: blue;
-color: white;
-border-style: outset;
-border-color: blue;
-height: 30px;
-width: 100px;
-font: bold15px arial,sans-serif;
-text-shadow: none;
-}
-
-.submit{
+.submit {
     background: #016ABC;
     color: #fff;
     border: 1px solid #eee;
     border-radius: 20px;
     box-shadow: 5px 5px 5px #eee;
     text-shadow: none;
+    height: 30px;
+    width: 100px;
+    cursor: pointer;
+}
+
+@keyframes Anima {
+    0% {
+        transform: scale(1);
     }
+
+    100% {
+        transform: scale(1.05);
+    }
+
+}
+
+.submit:hover {
+    animation-name: Anima;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+
+}
+
+.contatows {
+    margin-left: 60%;
+    margin-bottom: 5%;
+}
+
+.carroiradofodastico {
+
+    margin-left: 20%;
+    margin-bottom: 20%;
+}
