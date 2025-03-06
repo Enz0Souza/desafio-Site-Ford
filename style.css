@@ -1,30 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 *{
+    margin: 0;
+    padding: 0;
     font-family: "Inter", sans-serif;
 }
 
-
 footer {
     width: 100%;
-    height: 50px;
+    height: 60px;
     background-color: rgb(3, 3, 138);
     font-size: 20px;
     color: white;
     font: inherit;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    
 
     img {
         width: 45px;
+        height: auto;
     }
 }
 
 header {
     display: flex;
     align-items: center;
-    box-shadow: 10px 7px 20px rgb(204, 200, 200);
+    box-shadow: 15px 10px 25px  rgb(204, 200, 200);
+    height: auto;
 
 }
 
@@ -47,12 +48,8 @@ header {
     text-align: center;
     font-size: 125%;
     text-decoration: none;
-    padding: 15px 0;
-    margin-left: 5%;
+    padding: 5vh 0;
 }
-
-
-
 
 .fordcopyright {
     width: 100px;
@@ -70,7 +67,6 @@ header {
 }
 
 
-
 .textoranger {
     display: flex;
     flex-direction: column;
@@ -85,47 +81,114 @@ header {
 }
 
 /*tela menor*/
-@media only screen and (max-width: 1000px) {
+@media (max-width: 480px) {
+    
     footer {
-        width: 100%;
-        height: auto;
-        padding: 10px;
-        box-sizing: border-box;
-        position: fixed;
-
+        display: flex;
+        width: auto;
+        padding: 12%;
+        margin-top: 50vh;
     }
+
 
     .fordcopyright {
         text-align: center;
-        margin: 0 auto;
+        margin: 2%;
     }
 
     .carroinicial {
-        width: 90%;
+        width: 100%;
         height: auto;
+        flex-direction: column;
     }
 
-    .textoranger {
-        margin: 0 auto;
-        text-align: center;
-    }
 
     .logoford {
-        width: 20%;
+        width: 30% auto;
     }
+
+    .comparar{
+        background: #016ABC;
+        color: #fff;
+        border: 1px solid #eee;
+        border-radius: 20px;
+        text-shadow: none;
+        cursor: pointer;
+    }
+    
+    #video-ford-carro {
+        width: 60% auto;
+        display: flex;
+        margin: 20px auto;
+        background-color: black;
+        padding-inline: 16em auto;
+        flex-direction: column;
+    }
+    
+    .textorangerr{
+        color: rgb(54, 131, 255);
+    }
+    
+    .car-selection {
+        display: flex;
+        flex-direction: column;
+        gap: auto;
+        margin-top:auto;
+    }
+    
+    .car-option {
+        display: flex;
+        flex-direction: column;
+      
+    }
+    
+    .car-option img {
+        width: 2000x;
+        height: auto;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: transform 0.2s;
+    }
+    
+    .comparar{
+        background: #016ABC;
+        color: #fff;
+        border: 1px solid #eee;
+        border-radius: 20vh;
+        text-shadow: none;
+        cursor: pointer;
+     
+        
+    }
+    
+    .form-container{
+        flex-direction: column;
+    }
+    
 }
 
+
 /* tela maior */
-@media only screen and (min-width: 1500px) {
+@media (min-width: 1400px) {
     footer {
+        display: flex;
         width: 100%;
         height: 90px;
-        padding: 10px;
+        padding: 1px;
+        margin-top: 10%;
+    }
+
+    .container{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .menu1{
+        text-align: center;
+        margin-left: 7vh;
     }
 
     .fordcopyright {
         margin-left: auto;
-        margin-right: auto;
         text-align: center;
     }
 
@@ -144,6 +207,49 @@ header {
     .logoford {
         width: 8%;
     }
+    #video-ford-carro {
+        width: 60% ;
+        display: flex;
+        margin: 20px;
+        background-color: black;
+        padding-inline: 20em;
+    }
+    
+    .textorangerr{
+        color: rgb(54, 131, 255);
+    }
+    
+    .car-selection {
+        display: flex;
+        justify-content: center;
+        gap: 20px auto;
+        margin-top: 20px;
+    }
+    
+    .car-option {
+        display: flex;
+        align-items: center;
+    }
+    
+    .car-option img {
+        width: 2000x;
+        height: auto;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: transform 0.2s;
+    }
+    
+    .comparar{
+        background: #016ABC;
+        color: #fff;
+        border: 1px solid #eee;
+        border-radius: 20px;
+        text-shadow: none;
+        height: 40px;
+        width: 1000px;
+        cursor: pointer;
+        margin-left: 25vh;
+    }
 }
 
 /*css do site lançamento*/
@@ -152,7 +258,10 @@ header {
     display: block;
     margin: 20px auto;
     background-color: black;
-    padding-inline: 20em
+    padding-inline: 16em;
+}
+.textorangerr{
+    color: rgb(54, 131, 255);
 }
 
 .car-selection {
@@ -187,15 +296,15 @@ header {
 }
 
 .comparar{
-    margin-left: 17%;
     background: #016ABC;
     color: #fff;
     border: 1px solid #eee;
     border-radius: 20px;
     text-shadow: none;
     height: 40px;
-    width: 1000px;
+    width: 600px;
     cursor: pointer;
+    margin-left: 55vh;
 }
 @keyframes Anima {
     0% {
@@ -231,6 +340,7 @@ header {
     height: 30px;
     width: 100px;
     cursor: pointer;
+
 }
 
 @keyframes Anima {
@@ -261,8 +371,9 @@ header {
     gap: 30px; 
     max-width: 900px; 
     margin: 50px auto; 
+    margin-bottom: 15%;
 }
-
+/*lançamento*/
 .carroiradofodastico {
     width: 300px;
     height: auto;
