@@ -19,23 +19,31 @@
 
 <body>
 
-    <form action="" class="contatows">
-        <h1> <strong> Sobre Você </strong> </h1>
-        <input type="text" id="fname" name="fname" value="" placeholder="Nome de Usuario"><br><br>
-        <input type="text" id="lname" name="lname" value="" placeholder="Email"><br><br>
-        <input type="text" id="fname" name="fname" value="" placeholder="Email para contato"><br><br>
-        <input type="text" id="fname" name="fname" value="" placeholder="Telefone"><br><br>
-        <label for="fname">Tipo de Contato:</label><br>
-        <select id="tipo" name="contatos"><br><br>
-            <option value="volvo">Elogio</option>
-            <option value="saab">Reclamação</option>
-            <option value="fiat">Solicitação</option>
-        </select>
-        <br><br>
-        <input type="text" id="fname" name="fname" value="" placeholder="Mensagem"><br><br>
-        <input class="submit" type="submit" value="Submit">
-    </form>
-    <img class="carroiradofodastico" src="img/storm.jpg" alt="storm">
+    <body>
+
+        <div class="form-container">
+            <img class="carroiradofodastico" src="img/storm.jpg" alt="Storm">
+            
+            <form action="contato2.html" class="contatows">
+                <h1><strong>Sobre Você</strong></h1>
+                <input type="text" id="fname" name="fname" placeholder="Nome de Usuário"><br><br>
+                <input type="email" id="email" name="email" placeholder="Email"><br><br>
+                <input type="text" id="contact-email" name="contact-email" placeholder="Email para Contato"><br><br>
+                <input type="tel" id="phone" name="phone" placeholder="Telefone"><br><br>
+                <label for="tipo">Tipo de Contato:</label><br>
+                <select id="tipo" name="contatos">
+                    <option value="elogio">Elogio</option>
+                    <option value="reclamacao">Reclamação</option>
+                    <option value="solicitacao">Solicitação</option>
+                </select>
+                <br><br>
+                <input type="text" id="message" name="message" placeholder="Mensagem"><br><br>
+                <input class="submit" type="submit" value="Enviar">
+            </form>
+        </div>
+    
+    </body>
+    
 
     <footer>
         <p>Redes Sociais:</p>
