@@ -259,8 +259,9 @@ header {
 
 .fordtextovd {
   text-align: center;
-  margin-left: 36%;
-  width: 30%;
+  justify-content: center;
+   width: 90%;
+   margin-left: 4%;
 }
 .textorangerr {
   color: rgb(54, 131, 255);
