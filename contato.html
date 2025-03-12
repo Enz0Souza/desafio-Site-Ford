@@ -8,69 +8,70 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   </head>
 
-  <header>
-    <img class="logoford" src="img/logo-ford-256.png" alt="logo-ford-256" />
-    <main class="menu2">
-      <a class="menu1" href="index.html"> <i class="bi bi-house"></i>Home </a>
-            <a class="menu1" href="lançamento.html"> <i class="bi bi-car-front"></i> Lançamento </a>
-            <a class="menu1" href="contato.html"> <i class="bi bi-telephone"></i> Contato </a>
-    </main>
-  </header>
-  <body>
-    <body>
-      <div class="form-container">
-        <img class="carroiradofodastico" src="img/storm.jpg" alt="Storm" />
-        <form action="index.html" class="contatows">
-          <h1><strong> <i class="bi bi-person-vcard-fill"></i> Sobre Você</strong></h1>
-          <i class="bi bi-person-badge-fill"></i>
-          <input
-            type="text"
-            id="fname"
-            name="fname"
-            placeholder="Nome de Usuário" required
-          /><br /><br />
-          <i class="bi bi-envelope"></i>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Email" required
-          /><br /><br />
-          <i class="bi bi-envelope-at-fill"></i>
-          <input
-            type="text"
-            id="contact-email"
-            name="contact-email"
-            placeholder="Email para Contato" required
-          /><br /><br />
-          <i class="bi bi-telephone-fill"></i>
-          <input
-            type="tel"
-            id="phone"
-            name="phone"
-            placeholder="Telefone" required
-          /><br /><br />
-          <i class="bi bi-arrow-right-circle-fill"></i>
-          <label for="tipo">Tipo de Contato:</label><br />
-          <i class="bi bi-card-list"></i>
-          <select id="tipo" name="contatos">
-            <option value="elogio">Elogio</option>
-            <option value="reclamacao">Reclamação</option>
-            <option value="solicitacao">Solicitação</option>
-          </select>
-          <br /><br />
-          <i class="bi bi-card-text"></i>
-          <input
-            type="text"
-            id="message"
-            name="message"
-            placeholder="Mensagem" required
-          /><br /><br />
-          <input class="submit" type="submit" value="Enviar"/>
-        </form>
-      </div>
-    </body>
-
+  <div class="container">
+    <div class="content">
+      <body>
+        <header>
+          <img class="logoford" src="img/logo-ford-256.png" alt="logo-ford-256" />
+          <main class="menu2">
+            <a class="menu1" href="index.html"> <i class="bi bi-house"></i>Home </a>
+                  <a class="menu1" href="lançamento.html"> <i class="bi bi-car-front"></i> Lançamento </a>
+                  <a class="menu1" href="contato.html"> <i class="bi bi-telephone"></i> Contato </a>
+          </main>
+        </header>
+            <div class="form-container">
+              <img class="carroiradofodastico" src="img/storm.jpg" alt="Storm" />
+              <form action="index.html" class="contatows">
+                <h1><strong> <i class="bi bi-person-vcard-fill"></i> Sobre Você</strong></h1>
+                <i class="bi bi-person-badge-fill"></i>
+                <input
+                  type="text"
+                  id="fname"
+                  name="fname"
+                  placeholder="Nome de Usuário" required
+                /><br /><br />
+                <i class="bi bi-envelope"></i>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Email" required
+                /><br /><br />
+                <i class="bi bi-envelope-at-fill"></i>
+                <input
+                  type="text"
+                  id="contact-email"
+                  name="contact-email"
+                  placeholder="Email para Contato" required
+                /><br /><br />
+                <i class="bi bi-telephone-fill"></i>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="Telefone" required
+                /><br /><br />
+                <i class="bi bi-arrow-right-circle-fill"></i>
+                <label for="tipo">Tipo de Contato:</label><br />
+                <i class="bi bi-card-list"></i>
+                <select id="tipo" name="contatos">
+                  <option value="elogio">Elogio</option>
+                  <option value="reclamacao">Reclamação</option>
+                  <option value="solicitacao">Solicitação</option>
+                </select>
+                <br /><br />
+                <i class="bi bi-card-text"></i>
+                <input
+                  type="text"
+                  id="message"
+                  name="message"
+                  placeholder="Mensagem" required
+                /><br /><br />
+                <input class="submit" type="submit" value="Enviar"/>
+              </form>
+            </div>
+          </body>
+    </div>
     <footer>
       <p> <i class="bi bi-globe"></i> Redes Sociais: </p>
       <a class="icons" href="https://www.youtube.com/@fordbrasil">
@@ -88,5 +89,6 @@
       </a>
       <img class="fordcopyright" src="img/ford-96.png" alt="Copyright © 2025 Ford Motor Company" />
     </footer>
+  </div>
   </body>
 </html>
