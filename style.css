@@ -359,6 +359,10 @@ header {
     gap: 20px;
     margin-top: 20px;
   }
+
+  .form-container{
+    flex-direction: row;
+  }
 }
 
 /*css do site lançamento*/
