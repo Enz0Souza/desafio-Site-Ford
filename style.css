@@ -26,12 +26,13 @@ footer {
   height: 60px;
   background-color: rgb(3, 3, 138);
   font-size: 20px;
-  color: white;
   font: inherit;
-  align-items: center;
-  margin-top: auto;
+  color: white;
   text-align: center;
   padding: 10px;
+  align-items: center;
+  padding: 15px 0;
+  margin-top: auto;
 
   img {
     width: 45px;
@@ -471,12 +472,11 @@ header {
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
-/*lançamento*/
+
 .form-container {
   display: flex;
   overflow-x: auto;
   align-items: center;
-  justify-content: start;
   gap: 30px;
   max-width: 900px;
   margin: 50px auto;
@@ -491,6 +491,7 @@ header {
 
 .contatows {
   width: 400px;
+  margin-left: 25%;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
